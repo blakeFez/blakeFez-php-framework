@@ -37,7 +37,7 @@ class CommonRequest{
                 $value = trim($value);
             
             if($filter)
-                $value = htmlspecialchars($value);
+                $value = htmlspecialchars(addslashes(trim($value)));
         }
         
         return $value;
