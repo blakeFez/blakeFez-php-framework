@@ -45,7 +45,6 @@ class MysqlPdo{
 			}
 		}
 		$sth->execute();
-		$result = array();
 		return $sth->fetchAll(PDO::FETCH_ASSOC);
 	}
 	
